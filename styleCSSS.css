@@ -1,0 +1,16 @@
+
+.box1{
+    /* width: 64px;
+    height: 64px;
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    padding: 16px;
+    border: 2px solid #333; */
+    width: 100px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    padding: 16px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}

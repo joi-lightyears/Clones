@@ -1,0 +1,86 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Rubik', sans-serif;
+}
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+}
+#nav{
+
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px #616161;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#nav .subnav a{
+    color: #000;
+}
+#nav > li > a{ /*> la con truc tiep*/
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a{
+    color: #000;
+    background-color: #C2C2C2;
+    font-weight: bolder;
+}
+#nav .subnav li:hover{
+    background-color: #C2C2C2;
+    font-weight: bolder;
+}
+#nav .subnav li{
+    display: block;
+}
+#nav .subnav .Media{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#nav li{
+    list-style: none;
+}
+
+#nav .subnav li a{
+    display: block;
+    padding-left: 12px;
+}
+#slider{
+    /* min-height: 500px;
+    background-color: rgb(81, 89, 99); */
+}
+
+#content{
+
+}
+
+#footer{
+
+}

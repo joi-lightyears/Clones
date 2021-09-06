@@ -14,9 +14,13 @@ html{
 #header{
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #nav{
-
+    display: inline-block;
 }
 #nav li{
     display: inline-block;
@@ -34,6 +38,9 @@ html{
 }
 #nav .subnav a{
     color: #000;
+}
+#nav .nav-arrow{
+    font-size: 14px;
 }
 #nav > li > a{ /*> la con truc tiep*/
     color: #fff;
@@ -72,9 +79,23 @@ html{
     display: block;
     padding-left: 12px;
 }
+#header .search-button{
+    float: right;
+    padding: 0px 16px;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .search-button:hover {
+    background-color: #f72585;
+    cursor: pointer;
+}
 #slider{
-    /* min-height: 500px;
-    background-color: rgb(81, 89, 99); */
+     min-height: 1000px;
+     margin-top: 46px;
+    background-color: rgb(81, 89, 99);
 }
 
 #content{

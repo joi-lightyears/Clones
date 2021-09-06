@@ -18,6 +18,7 @@ html{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 #nav{
     display: inline-block;
@@ -93,15 +94,61 @@ html{
     cursor: pointer;
 }
 #slider{
-     min-height: 1000px;
+     /* min-height: 1000px;
      margin-top: 46px;
-    background-color: rgb(81, 89, 99);
+    background-color: rgb(81, 89, 99); */
+    position: relative;
+    z-index: 1;
+    margin-top: 46px;
+    padding-top: 50%; /* 50% chieu ngang cua chinh no */
+    background: url(/web-band/assets/img/ea1148123519859.60effc877c4d8.png) top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 46px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    /* hoac dung cach 2 de can giua */
+    /* width: 100%; */
+    /* hoac dung cach 3 de can giua */
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+#slider .text-heading{
+    margin-bottom: 30px;
 }
 
-#content{
+#all-content{
 
 }
-
+#all-content .content-text-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+#all-content .text-section-heading{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#all-content .sub-text-heading{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.6;
+    font-style: italic;
+}
+#all-content .about-text-content{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 1.4; /* neu la tieng viet thi 1.6 */
+}
 #footer{
 
 }

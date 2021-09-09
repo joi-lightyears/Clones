@@ -149,6 +149,24 @@ html{
     text-align: justify;
     line-height: 1.4; /* neu la tieng viet thi 1.6 */
 }
+#all-content .member-item{
+    float: left;
+}
+#all-content .members-list{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-around;
+}
+#all-content .member-name{
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+#all-content .member-img{
+    margin-top: 14px;
+    width: 154px;
+    border-radius: 8px;
+}
 #footer{
 
 }

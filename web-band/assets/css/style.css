@@ -197,6 +197,35 @@ html{
     line-height: 24px;
     margin-top: -2px;
 }
+
+.places{
+    margin-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+.places .NewYork{
+    width: 154px;
+    display: block;
+}
+.places .NewYork:hover{
+    opacity: 0.6;
+}
+.places .place-content{
+    background-color: #fff;
+    padding: 16px;
+}
+.places .place-buy{
+    color: #fff;
+    background-color: #000;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 18px;
+}
+.places .place-buy:hover{
+    color: #000;
+    background-color: #ccc;
+}
 #footer{
 
 }

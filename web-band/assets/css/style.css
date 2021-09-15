@@ -221,10 +221,107 @@ html{
     padding: 11px 16px;
     display: inline-block;
     margin-top: 18px;
+    border: none;
 }
 .places .place-buy:hover{
     color: #000;
     background-color: #ccc;
+}
+.modal.appear{
+    display: flex;
+}
+.modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background:rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.modal-frame{
+    background-color: #fff;
+    width: 900px;
+    /* max-width: calc(100%-40px); */
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease /* chuyen dong cham */ 0.6s;
+}
+.modal-header{
+    background-color: rgb(37, 76, 160);
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+
+}
+.modal .bag-icon{
+    margin-right: 16px;
+}
+.modal .modal-close-button{
+    position: absolute;
+    right: 0;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.8;
+}
+.modal .modal-close-button:hover{
+    background-color: #ccc;
+    opacity: 1;
+    color: #000;
+}
+.modal .modal-label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.modal .modal-body{
+    padding: 16px 18px;
+}
+.modal .modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+.modal .modal-pay-button{
+    width: 100%;
+    background-color: rgb(37, 76, 160);
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.modal .modal-pay-button:hover{
+    opacity: 0.9;
+    color: #000;
+}
+.modal-footer{
+    padding-top: 16px;
+    text-align: right;
+    
+}
+.modal .modal-footer-help-link{
+    color: rgb(0, 68, 255);
+}
+@keyframes/* lam motion */ modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0); /* tra ve vi tri ban dau */
+    }
 }
 #footer{
 

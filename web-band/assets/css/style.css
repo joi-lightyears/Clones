@@ -1,327 +1,159 @@
-/* reset css */
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html{
-    font-family: 'Rubik', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #main{
 
 }
-
 #header{
     height: 46px;
-    background-color: #000;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1;
+}
+#header .header-search{
+    float: right;
+    padding: 0 21px;
+}
+#header .search-button{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .header-search:hover{
+    background-color: red;
+    cursor: pointer;
 }
 #nav{
     display: inline-block;
 }
-#nav li{
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
     display: inline-block;
     position: relative;
-}
-#nav .subnav{
-    display: none;
-    min-width: 160px;
-    position: absolute;
-    top: 100%;
-    background-color: white;
-    box-shadow: 0px 0px 10px #616161;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.text-white{
-    color: #fff !important;
-}
-#nav .subnav a{
-    color: #000;
-}
-#nav .nav-arrow{
-    font-size: 14px;
-}
-#nav > li > a{ /*> la con truc tiep*/
-    color: #fff;
-    text-transform: uppercase;
 }
 #nav li a{
     text-decoration: none;
     line-height: 46px;
-    padding: 0px 24px;
-    display: inline-block;
+    padding: 0 24px;
+    display: block;
+}
+#nav>li>a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav .subnav li:hover a,
+#nav>li:hover>a{
+    color: black;
+    background-color: gray;
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    top: 100%;
 }
 #nav li:hover .subnav{
     display: block;
 }
-#nav > li:hover > a{
-    color: #000;
-    background-color: #C2C2C2;
-    font-weight: bolder;
-}
-#nav .subnav li:hover{
-    background-color: #C2C2C2;
-    font-weight: bolder;
-}
-#nav .subnav li{
-    display: block;
-}
-#nav .subnav .Media{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-#nav li{
-    list-style: none;
-}
-
-#nav .subnav li a{
-    display: block;
-    padding-left: 12px;
-}
-#header .search-button{
-    float: right;
-    padding: 0px 16px;
-}
-#header .search-icon{
-    color: #fff;
-    font-size: 20px;
-    line-height: 46px;
-}
-#header .search-button:hover {
-    background-color: #f72585;
-    cursor: pointer;
+#nav .nav-arrow{
+    font-size: 14px;
 }
 #slider{
-     /* min-height: 1000px;
-     margin-top: 46px;
-    background-color: rgb(81, 89, 99); */
     position: relative;
-    z-index: 1;
     margin-top: 46px;
-    padding-top: 50%; /* 50% chieu ngang cua chinh no */
-    background: url(/web-band/assets/img/ea1148123519859.60effc877c4d8.png) top center / cover no-repeat;
+    padding-top: 50%;
+    background: url(/web-band/assets/img/slider.png) top center / cover no-repeat;
 }
 #slider .text-content{
     position: absolute;
-    color: #fff;
-    bottom: 46px;
+    bottom: 90px;
+    color: #ffffff;
     /* left: 50%;
     transform: translateX(-50%); */
-    /* hoac dung cach 2 de can giua */
-    /* width: 100%; */
-    /* hoac dung cach 3 de can giua */
-    right: 0;
-    left: 0;
-    text-align: center;
-}
-#slider .text-heading{
-    margin-bottom: 30px;
-}
-
-#all-content{
-
-}
-#all-content .content-text-section{
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 64px 0;
-}
-#all-content .text-section-heading{
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 4px;
-}
-#all-content .sub-text-heading{
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 22px;
-    font-size: 15px;
-    font-weight: bold;
-    opacity: 0.6;
-    font-style: italic;
-}
-#all-content .about-text-content{
-    font-size: 15px;
-    font-weight: 600;
-    text-align: justify;
-    line-height: 1.4; /* neu la tieng viet thi 1.6 */
-}
-#all-content .member-item{
-    float: left;
-}
-#all-content .members-list{
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-around;
-}
-#all-content .member-name{
-    font-size: 15px;
-    font-weight: 900;
-    text-align: center;
-}
-#all-content .member-img{
-    margin-top: 14px;
-    width: 154px;
-    border-radius: 8px;
-}
-.tour-section{
-    background-color: #000;
-}
-.book-ticket{
-    background-color: #fff;
-}
-.book-ticket li{
-    list-style-type: none;
-    font-size: 15px;
-    color: #757575;
-    padding: 11px 16px;
-    border-bottom: 1px solid #ccc;
-}
-.book-ticket .sold-out{
-    background-color: #f72585;
-    padding: 3px 4px;
-    margin-left: 16px;
-}
-.book-ticket .quantity{
-    float: right;
-    width: 24px;
-    background-color: #000;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 24px;
-    margin-top: -2px;
-}
-
-.places{
-    margin-top: 32px;
-    padding-bottom: 32px;
-    display: flex;
-    justify-content: space-around;
-}
-.places .NewYork{
-    width: 154px;
-    display: block;
-}
-.places .NewYork:hover{
-    opacity: 0.6;
-}
-.places .place-content{
-    background-color: #fff;
-    padding: 16px;
-}
-.places .place-buy{
-    color: #fff;
-    background-color: #000;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 18px;
-    border: none;
-}
-.places .place-buy:hover{
-    color: #000;
-    background-color: #ccc;
-}
-.modal.appear{
-    display: flex;
-}
-.modal{
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background:rgba(0, 0, 0, 0.4);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-}
-.modal-frame{
-    background-color: #fff;
-    width: 900px;
-    /* max-width: calc(100%-40px); */
-    min-height: 200px;
-    position: relative;
-    animation: modalFadeIn ease /* chuyen dong cham */ 0.6s;
-}
-.modal-header{
-    background-color: rgb(37, 76, 160);
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: #fff;
-
-}
-.modal .bag-icon{
-    margin-right: 16px;
-}
-.modal .modal-close-button{
-    position: absolute;
-    right: 0;
-    padding: 12px;
-    cursor: pointer;
-    color: #fff;
-    opacity: 0.8;
-}
-.modal .modal-close-button:hover{
-    background-color: #ccc;
-    opacity: 1;
-    color: #000;
-}
-.modal .modal-label{
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.modal .modal-body{
-    padding: 16px 18px;
-}
-.modal .modal-input{
-    border: 1px solid #ccc;
     width: 100%;
-    font-size: 16px;
-    padding: 10px 10px;
-    margin-bottom: 15px;
-}
-.modal .modal-pay-button{
-    width: 100%;
-    background-color: rgb(37, 76, 160);
-    padding: 10px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-}
-.modal .modal-pay-button:hover{
-    opacity: 0.9;
-    color: #000;
-}
-.modal-footer{
-    padding-top: 16px;
-    text-align: right;
+    text-align: center;
     
 }
-.modal .modal-footer-help-link{
-    color: rgb(0, 68, 255);
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
 }
-@keyframes/* lam motion */ modalFadeIn{
-    from{
-        opacity: 0;
-        transform: translateY(-150px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0); /* tra ve vi tri ban dau */
-    }
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+#content{
+
+}
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-section{
+
+}
+.section-heading{
+
+}
+#content .section-heading{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.7;
+}
+#content .section-sub-heading,
+#content .section-heading{
+    text-align: center;
+}
+.section-sub-heading{
+
+}
+#content .about-content{
+    margin-top: 16px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .members-list{
+    margin-top: 45px;
+    overflow: hidden;
+}
+#content .member-item{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+#content .member-name{
+    font-size: 15px;
+}
+#content .avt{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 7px;
 }
 #footer{
 

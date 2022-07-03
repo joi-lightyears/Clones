@@ -6,6 +6,7 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #main{
 
 }
@@ -155,6 +156,163 @@ html{
     width: 154px;
     border-radius: 7px;
 }
+.tour-section{
+    background-color: black;
+}
+.tickets-list{
+    margin-top: 40px;
+    background-color: white;
+}
+.tickets-list li{
+    list-style: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.places-list{
+    margin: 32px -8px;
+    padding-bottom: 48px;
+}
+.place-item{
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.8;
+}
+.place-content{
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15pz;
+    font-weight: 600;
+}
+.place-time{
+    color: #757575;
+    padding: 12px 0;
+}
+.desc{
+    line-height: 1.4;
+}
+.place-buy{
+    color: #fff;
+    margin-top: 12px;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+}
+.place-buy:hover{
+    color: black;
+    background-color: #ccc;
+}
+.text-white{
+    color: #ffffff !important;
+}
+.clear{
+    clear: both;
+}
 #footer{
 
+}
+.modal{
+    position: fixed;
+    /* top: 0;
+    left: 0;
+    right:0;
+    bottom: 0; */
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+.modal-header {
+    background: dodgerblue;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+.modal-close:hover {
+    opacity: 1;
+}
+.modal-close {
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 12px;
+}
+.model-label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.modal-body {
+    margin: 16px;
+}
+#buy-ticket {
+    background: dodgerblue;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    width: 100%;
+}
+#buy-ticket:hover{
+    opacity: 0.8;
+}
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: dodgerblue;
 }

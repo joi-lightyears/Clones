@@ -227,6 +227,7 @@ html{
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
+    border: none;
 }
 .place-buy:hover{
     color: black;
@@ -250,7 +251,7 @@ html{
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
     z-index: 2;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -260,6 +261,7 @@ html{
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease 0.7s;
 }
 .modal-header {
     background: dodgerblue;
@@ -315,4 +317,17 @@ html{
 }
 .modal-footer a{
     color: dodgerblue;
+}
+.open{
+    display: flex;
+}
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

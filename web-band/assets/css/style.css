@@ -10,6 +10,38 @@ html{
 #main{
 
 }
+.margin-top-16{
+    margin-top: 16px !important;
+}
+.margin-top-8{
+    margin-top: 8px !important;
+}
+.text-center{
+    text-align: center;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px ;
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.333%;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
 #header{
     height: 46px;
     background-color: black;
@@ -143,11 +175,6 @@ html{
     margin-top: 45px;
     overflow: hidden;
 }
-#content .member-item{
-    float: left;
-    width: 33.3333%;
-    text-align: center;
-}
 #content .member-name{
     font-size: 15px;
 }
@@ -189,13 +216,9 @@ html{
 }
 
 .places-list{
-    margin: 32px -8px;
+    margin-top: 32px;
+    margin-bottom: 48px;
     padding-bottom: 48px;
-}
-.place-item{
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
 }
 .place-img{
     width: 100%;
@@ -330,4 +353,35 @@ html{
         transform: translateY(0);
         opacity: 1;
     }
+}
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-input{
+    font-size: 15px;
+}
+.contact-input .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+.contact-input .form-send{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+}
+.contact-input .form-send:hover{
+    color: black;
+    background-color: gray;
 }

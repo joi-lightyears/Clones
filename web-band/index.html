@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Joitaro</title>
+    <link rel="icon" href=".\assets\img\blue.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
 </head>
@@ -12,10 +13,10 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">More <i class="nav-arrow ti-angle-down"></i>
                 </a>
                 <ul class="subnav">
@@ -36,7 +37,7 @@
             </div>
         </div>
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">Blade Runner 2049</h2>
                 <p class="section-sub-heading">What a day</p>
                 <p class="about-content">Blade Runner 2049 is a 2017
@@ -63,7 +64,7 @@
                     </div>
                 </div>  
             </div>
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">I'm having a crush on a straight guy</p>
@@ -80,7 +81,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Nov 27 2022</p>
                                 <p class="desc">bvhfsfv vbhfb vbhisdbvi bivsbvsv jbjv jbhvsj jbhv jbjvs jsbvjsub jbvjsbjvbsji  hjbjvsbjs</p>
-                                <button href="#" class="place-buy js-buy-ticket">Buy Tickets</button>
+                                <button href="#" class="btn place-buy js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -89,7 +90,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Dec 31 2022</p>
                                 <p class="desc">bvhfsfv vbhfb vbhisdbvi bivsbvsv jbjv jbhvsj jbhv jbjvs jsbvjsub jbvjsbjvbsji  hjbjvsbjs</p>
-                                <button href="#" class="place-buy js-buy-ticket">Buy Tickets</button>
+                                <button href="#" class="btn place-buy js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -98,14 +99,14 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Oct 5 2022</p>
                                 <p class="desc">bvhfsfv vbhfb vbhisdbvi bivsbvsv jbjv jbhvsj jbhv jbjvs jsbvjsub jbvjsbjvbsji  hjbjvsbjs</p>
-                                <button href="#" class="place-buy js-buy-ticket">Buy Tickets</button>
+                                <button href="#" class="btn place-buy js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
                     </div>
                 </div>
             </div>
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">I love you</p>
                 <div class="row contact-content">
@@ -129,14 +130,26 @@
                                     <input type="text" required name="" placeholder="Message" id="" class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" value="SEND" class="margin-top-16 form-send">
+                            <input type="submit" value="SEND" class="btn margin-top-16 pull-right">
                         </form>
                     </div>
                 </div>
             </div>
+
+            <div class="map-section">
+                <img src=".\assets\img\blue.png" alt="" class="">
+            </div>
         </div>
         <div id="footer">
-
+            <div class="social-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-pinterest-alt"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">Joitaro</a></p>
         </div>
     </div>
     <div class="modal js-modal">

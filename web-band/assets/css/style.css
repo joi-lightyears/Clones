@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -112,7 +113,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/web-band/assets/img/slider.png) top center / cover no-repeat;
+    background: url(/web-band/assets/img/blue.png) top center / cover no-repeat;
 }
 #slider .text-content{
     position: absolute;
@@ -137,7 +138,7 @@ html{
 }
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -243,7 +244,7 @@ html{
 .desc{
     line-height: 1.4;
 }
-.place-buy{
+.btn{
     color: #fff;
     margin-top: 12px;
     background-color: black;
@@ -252,18 +253,16 @@ html{
     display: inline-block;
     border: none;
 }
-.place-buy:hover{
+.btn:hover{
     color: black;
     background-color: #ccc;
+    cursor: pointer;
 }
 .text-white{
     color: #ffffff !important;
 }
 .clear{
     clear: both;
-}
-#footer{
-
 }
 .modal{
     position: fixed;
@@ -381,7 +380,33 @@ html{
     padding: 10px 16px;
     float: right;
 }
-.contact-input .form-send:hover{
-    color: black;
-    background-color: gray;
+.pull-right{
+    float: right !important;
+}
+.map-section img{
+    width: 100%;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social-list{
+    font-size: 24px;
+    
+}
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    
+}
+#footer .copyright a:hover,
+#footer .social-list a:hover{
+    opacity: 0.5;
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.7);
 }

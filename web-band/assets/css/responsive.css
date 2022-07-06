@@ -1,0 +1,9 @@
+/* mobile */
+@media (max-width : 739px) {
+    #nav > li {
+        display: block;
+    }
+    #header .header-search{
+        display: none;
+    }
+}

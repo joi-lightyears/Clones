@@ -51,11 +51,14 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
+#header .mobile-menu,
 #header .header-search{
     float: right;
     padding: 0 21px;
 }
+#header .menu-button,
 #header .search-button{
     color: white;
     font-size: 20px;
@@ -64,6 +67,12 @@ html{
 #header .header-search:hover{
     background-color: red;
     cursor: pointer;
+}
+#header .mobile-menu:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu:hover .menu-button{
+    color: black;
 }
 #nav{
     display: inline-block;
@@ -138,7 +147,8 @@ html{
 }
 #content .content-section{
     width: 800px;
-    padding: 64px 0 112px;
+    max-width: 100%;
+    padding: 64px 10px 112px;
     margin-left: auto;
     margin-right: auto;
 }

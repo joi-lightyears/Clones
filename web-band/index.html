@@ -54,15 +54,15 @@
                        Gosling plays K, a Nexus-9 replicant "blade runner" who uncovers a secret that 
                        threatens to destabilize society and the course of civilization.</p>
                 <div class="row members-list">
-                    <div class="col col-third text-center">
+                    <div class="margin-top-32 s-col-full col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/img/tumblr_504ed1a3346c0c881fd3cde6434a4621_0040b7f9_2048.jpg" alt="Name" class="avt">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="margin-top-32 s-col-full col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/img/tumblr_504ed1a3346c0c881fd3cde6434a4621_0040b7f9_2048.jpg" alt="Name" class="avt">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="margin-top-32 s-col-full col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/img/tumblr_504ed1a3346c0c881fd3cde6434a4621_0040b7f9_2048.jpg" alt="Name" class="avt">
                     </div>
@@ -79,31 +79,31 @@
                     </ul>
                     
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full margin-top-16">
                             <img src=".\assets\img\gojo.jpg" alt="New York" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Nov 27 2022</p>
                                 <p class="desc">bvhfsfv vbhfb vbhisdbvi bivsbvsv jbjv jbhvsj jbhv jbjvs jsbvjsub jbvjsbjvbsji  hjbjvsbjs</p>
-                                <button href="#" class="btn place-buy js-buy-ticket">Buy Tickets</button>
+                                <button href="#" class="btn s-full-width hplace-buy js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full margin-top-16">
                             <img src=".\assets\img\gojo.jpg" alt="New York" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Dec 31 2022</p>
                                 <p class="desc">bvhfsfv vbhfb vbhisdbvi bivsbvsv jbjv jbhvsj jbhv jbjvs jsbvjsub jbvjsbjvbsji  hjbjvsbjs</p>
-                                <button href="#" class="btn place-buy js-buy-ticket">Buy Tickets</button>
+                                <button href="#" class="btn s-full-width hplace-buy js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full margin-top-16">
                             <img src=".\assets\img\gojo.jpg" alt="New York" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Oct 5 2022</p>
                                 <p class="desc">bvhfsfv vbhfb vbhisdbvi bivsbvsv jbjv jbhvsj jbhv jbjvs jsbvjsub jbvjsbjvbsji  hjbjvsbjs</p>
-                                <button href="#" class="btn place-buy js-buy-ticket">Buy Tickets</button>
+                                <button href="#" class="btn s-full-width hplace-buy js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -114,18 +114,18 @@
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">I love you</p>
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half contact-info s-col-full">
                         <p><i class="ti-location-pin"></i>New York, US</p>
-                        <p><i class="ti-mobile"></i>Phone 01526452065</p>
-                        <p><i class="ti-email"></i>Email</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+84 0452065">+84 0452065</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:kunthanhdat@gmail.com">kunthanhdat@gmail.com</a></p>
                     </div>
-                    <div class="col col-half contact-input">
+                    <div class="col col-half contact-input s-col-full">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="s-margin-top-8 col col-half s-col-full">
                                     <input type="text" required name="" placeholder="Name" id="" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="s-margin-top-8 col col-half s-col-full">
                                     <input type="email" required name="" placeholder="Email" id="" class="form-control">
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                     <input type="text" required name="" placeholder="Message" id="" class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" value="SEND" class="btn margin-top-16 pull-right">
+                            <input type="submit" value="SEND" class="s-full-width btn margin-top-16 pull-right">
                         </form>
                     </div>
                 </div>
@@ -225,7 +225,12 @@
         for (var i=0;i<menuItems.length;i++ ){
             var menuItem = menuItems[i];
             menuItem.onclick = function(){
-                header.style.height = null;
+                var isParent = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+                if (!isParent){
+                    header.style.height = null;
+                }else{
+                    event.preventDefault();
+                }
             }
         }
     </script>

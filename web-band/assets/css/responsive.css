@@ -63,4 +63,10 @@
     .s-full-width{
         width: 100%;
     }
+    .contact-submit{
+        font-size: 17px;
+    }
+    .contact-input .form-control{
+        font-size: 16px;
+    }
 }

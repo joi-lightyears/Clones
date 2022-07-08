@@ -273,6 +273,7 @@ html{
     padding: 11px 16px;
     display: inline-block;
     border: none;
+    -webkit-appearance: none;
 }
 .btn:hover{
     color: black;

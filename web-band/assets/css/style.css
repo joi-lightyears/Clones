@@ -133,7 +133,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/web-band/assets/img/blue.png') top center / cover no-repeat;
+    background: url('../img/blue.png') top center / cover no-repeat;
 }
 #slider .text-content{
     position: absolute;

@@ -274,6 +274,7 @@ html{
     display: inline-block;
     border: none;
     -webkit-appearance: none;
+    -webkit-border-radius: none;
 }
 .btn:hover{
     color: black;

@@ -1,18 +1,18 @@
 let movies = [
     {
-        name: 'WI  vs IND 317/8 (50)',
-        des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro et veniam excepturi, eaque voluptatem impedit nulla laboriosam facilis ut laboriosam libero!',
-        image: './assests/img/slider 2.PNG'
+        name: 'The Martian',
+        des: 'An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive and can survive until a potential rescue.',
+        image: './assests/img/slider 2.jpg'
     },
     {
-        name: 'Rudra: The Edge of Darkness',
-        des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro et veniam excepturi, eaque voluptatem impedit nulla laboriosam facilis ut laboriosam libero!',
-        image: './assests/img/slider 1.PNG'
+        name: 'The Mandalorian',
+        des: 'The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.',
+        image: './assests/img/slider 1.jpg'
     },
     {
-        name: 'The Book of Boba Fett',
-        des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro et veniam excepturi, eaque voluptatem impedit nulla laboriosam facilis ut laboriosam libero!',
-        image: './assests/img/slider 3.PNG'
+        name: 'Your Name Engraved Herein',
+        des: 'In 1987, as martial law ends in Taiwan, Jia-han and Birdy fall in love amid family pressure, homophobia and social stigma.',
+        image: './assests/img/slider 3.JPG'
     },
     {
         name: 'raya and the last dragon',

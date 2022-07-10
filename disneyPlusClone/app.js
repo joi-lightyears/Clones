@@ -50,4 +50,4 @@ setInterval(() => {
         firstSlide.style.marginLeft = `calc(-${100*(counter+1)}% - ${30*(counter+1)}px)`
         counter++
     }
-}, 2000)
+}, 3000)

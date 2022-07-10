@@ -112,7 +112,7 @@ body{
     height: 100%;
     position: relative;
     margin: auto;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .slider{
     flex: 0 0 auto;

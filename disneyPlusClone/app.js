@@ -21,23 +21,33 @@ const createSlide = () => {
     carousel.appendChild(slide)
 
     imgElement.src = movies[slideIndex].image
-    slideIndex++
     
-    slide.className = 'slider'
+    slide.classList.add('slider-' + slideIndex, 'slider')
+    slideIndex++
     content.className = 'slider-content'
     h1.className = 'movie-title'
     p.className = 'movie-desc'
     sliders.push(slide)
 
     // sliding effect
-    if(sliders.length){
-        sliders[0].style.marginLeft = `calc(-${100*(sliders.length-2)}% - ${30*(sliders.length-2)}px)`
-    }
+    // if(sliders.length){
+    //     sliders[0].style.marginLeft = `calc(-${100*(sliders.length-2)}% - ${30*(sliders.length-2)}px)`
+    // }
 }
 for(let i=0;i<5;i++){
     createSlide()
 }
+var counter = 0
 
 setInterval(() => {
-    createSlide()
-}, 3000)
+    let firstSlide = document.querySelector('.slider-0')
+    if(counter==4)
+    {
+        counter=0
+        firstSlide.style.marginLeft = `calc(0px)`
+
+    }else{
+        firstSlide.style.marginLeft = `calc(-${100*(counter+1)}% - ${30*(counter+1)}px)`
+        counter++
+    }
+}, 2000)

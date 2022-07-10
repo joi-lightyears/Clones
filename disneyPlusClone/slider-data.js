@@ -12,7 +12,7 @@ let movies = [
     {
         name: 'Your Name Engraved Herein',
         des: 'In 1987, as martial law ends in Taiwan, Jia-han and Birdy fall in love amid family pressure, homophobia and social stigma.',
-        image: './assests/img/slider 3.JPG'
+        image: './assests/img/slider 3.jpg'
     },
     {
         name: 'raya and the last dragon',

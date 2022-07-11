@@ -1,5 +1,5 @@
 let carousel = document.querySelector('.carousel')
-let sliders = []
+// let sliders = []
 let slideIndex =0;
 const createSlide = () => {
     if(slideIndex >= movies.length){
@@ -27,7 +27,7 @@ const createSlide = () => {
     content.className = 'slider-content'
     h1.className = 'movie-title'
     p.className = 'movie-desc'
-    sliders.push(slide)
+    // sliders.push(slide)
 
     // sliding effect
     // if(sliders.length){
@@ -51,3 +51,43 @@ setInterval(() => {
         counter++
     }
 }, 3000)
+
+// video cards START
+//----------create video cards 
+let vidContainer = document.querySelector('.video-card-container')
+let vidIndex = 0
+const createVidCard = () => {
+    let vidCard = document.createElement('div')
+    let img = document.createElement('img')
+    let vid = document.createElement('video')
+    
+    vidContainer.appendChild(vidCard)
+    vidCard.appendChild(img)
+    vidCard.appendChild(vid)
+    img.src = videos[vidIndex].image
+    vid.src = videos[vidIndex].video
+    
+    vidCard.className = ('video-card')
+    img.className = 'video-card-img'
+    vid.className = 'card-video'
+    vidIndex++
+}
+for(let i = 0; i<5;i++)
+{
+    createVidCard()
+}
+//----------video will play when hover
+const videoCards = document.querySelectorAll('.video-card')
+videoCards.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        let video = item.children[1]
+        video.play()
+        video.loop = true
+    })
+    item.addEventListener('mouseleave', () => {
+        let video = item.children[1]
+        video.pause()
+    })
+})
+
+// video cards END

@@ -257,7 +257,7 @@ a{
 .main-slider-text .category{
     color: #969696;
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 .main-slider-text .category a{
     color: #e70634;
@@ -396,3 +396,35 @@ a{
     transition: all ease 0.3s;
 }
 /* Latest Movies END */
+/* footer START */
+footer{
+    background-color: #0e0e0ec2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+footer .copyright{
+    color: #4d4d4d;
+    font-size: 0.9rem;
+}
+footer .logo{
+    margin: 0px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+/* footer END */
+
+/* fixed menu btn when scrolling */
+.fix-icon .menu-icon{
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    background-color: #1c1f25;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

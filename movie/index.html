@@ -60,6 +60,11 @@
     <!-- slider START-->
     <section id="main-slider">
         <!-- Swiper -->
+        <!-- slider buttons -->
+        <div class="slider-btns">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <!-- slider 1 -->
@@ -259,11 +264,6 @@
             <!-- <div class="swiper-pagination"></div> -->
         </div>
     </section>
-    <!-- slider buttons -->
-    <div class="slider-btns">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
     <!-- slider END-->
     <!-- Latest Movies START-->
     <section id="latest">
@@ -628,6 +628,18 @@
     <!-- jQuery -->
     <script src="./js/jQuery.js"></script>
     <script>
+        // progress bar
+        let scrollPercentage =() =>{
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round(pos * 100 / calcHeight);
+            scrollProgress.style.background = `conic-gradient(#e70634 $(scrollValue)%, #ccc $(scrollValue)%)`;
+            console.log(scrollValue)
+        }
+        window.onscroll = scrollPercentage
+        window.onload = scrollPercentage
         // Initialize Swiper
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 1,

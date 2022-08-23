@@ -636,7 +636,7 @@
             let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrollValue = Math.round(pos * 100 / calcHeight);
             scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
-            console.log(scrollValue)
+            // console.log(scrollValue)
         }
         window.onscroll = scrollPercentage
         window.onload = scrollPercentage

@@ -232,7 +232,8 @@ body{
     padding: 25px;
     background: linear-gradient(360deg, #161616b9 35%, rgba(73,73,73,0.23) 64%);
 }
-.main-slider-text .quality{
+.main-slider-text .quality,
+.more-about-movie .quality{
     background-color: #e70634;
     color: #080808;
     font-weight: 600;
@@ -539,4 +540,96 @@ footer .logo{
     .post-box{
         height: 500px;
     }
+}
+
+/* Movie page */
+.movie-banner{
+    width: 90%;
+    max-width: 1400px;
+    margin: 10px auto;
+    min-height: 520px;
+    padding: 60px 40px 40px 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.movie-banner::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 32, 32, 0.7);
+    background: linear-gradient(0deg, rgb(8,8,8) 0%, rgba(0,0,0,0.6) 100%);
+}
+.movie-banner-img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.movie-banner-img::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 32, 32, 0.7);
+    background: linear-gradient(-90deg, rgba(37,37,37,0.2) 0%, rgba(37,37,37,0.3));
+}
+.movie-banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.banner-container{
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    position: relative;
+}
+.title-container{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.movie-title h1{
+    color: white;
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+.more-about-movie{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    color: white;
+}
+.more-about-movie .rating,
+.more-about-movie span{
+    margin-right: 20px;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+.language{
+    margin-top: 20px;
+}
+.language span{
+    background-color: #dfdfdf0e;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: #dfdfdf;
+    font-size: 0.8rem;
 }

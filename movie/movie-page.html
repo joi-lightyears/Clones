@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie name</title>
+    <link rel="icon" href="./assets/Images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- fonts -->
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- monoton font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Scroll progress bar START-->
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+    <!-- Scroll progress bar END-->
+    <!-- Nav bar START -->
+    <div class="navigation">
+        <!-- menu btn -->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+        <!-- logo -->
+        <a href="./index.html" class="logo">
+            Movies<span>.HUR</span>
+        </a>
+        <!-- menu -->
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Genre</a></li>
+            <li><a href="#">TV SHows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- search box -->
+        <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required>
+            <!-- <textarea spellcheck="false"></textarea> -->
+            <button type="submit">
+                <i class="search-icon ti-search"></i>
+            </button>
+        </form>
+    </div>
+    <!-- Nav bar END -->
+    <!-- Movie banner -->
+    <section class="movie-banner">
+        <!-- img -->
+        <div class="movie-banner-img">
+            <img src="./assets/Movie-Data/Pirates-of-the-Caribbean-Salazar's-Revenge/cover.jpg" alt="">
+        </div>
+        <!-- content -->
+        <div class="banner-container">
+            <!-- title container -->
+            <div class="title-container">
+                <!-- title top -->
+                <!-- title -->
+                <div class="movie-title">
+                    <h1>Pirates of the Caribean Salaza's Revenge</h1>
+                </div>
+                <!-- more about movie -->
+                <div class="more-about-movie">
+                    <span class="quality">Full HD</span>
+                    <div class="rating">
+                        8.2 <img src="./assets/Images/IMDb-icon.png" alt="imdb">
+                    </div>
+                    <span>August 28th 2017</span>
+                    <span>87min</span>
+                </div>
+                <!-- language -->
+                <div class="language">
+                    <span>English</span>
+                </div>
+                <!-- title bottom -->
+                <div class="title-bottom">
+                    <div class="category">
+                        <strong>Category</strong>
+                    </div>
+                    <!-- trailer btn -->
+                    <a href="#" class="watch-btn">Watch Trailer</a>
+                </div>
+            </div>
+
+            <!-- play button -->
+            <div class="play-btn-container"></div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="./js/jQuery.js"></script>
+    <script>
+        // progress bar
+        let scrollPercentage =() =>{
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round(pos * 100 / calcHeight);
+            scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+            // console.log(scrollValue)
+        }
+        window.onscroll = scrollPercentage
+        window.onload = scrollPercentage
+
+        // fixed menu btn when scrolling (jQuery)
+        $(window).scroll(function(){
+            if($(document).scrollTop() > 20){
+                $('.navigation').addClass('fix-icon');
+            }
+            else{
+                $('.navigation').removeClass('fix-icon');
+            }
+        })
+
+
+      </script>
+</body>
+</html>

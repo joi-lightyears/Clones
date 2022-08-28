@@ -13,6 +13,6 @@ button.addEventListener('click', function(){
         namee.innerHTML = nameValue
         temp.innerHTML = tempValue
         desc.innerHTML = descValue
-        console.log(data)
+        // console.log(data)
     })
 })

@@ -1,0 +1,30 @@
+
+@font-face{
+    font-family: spotify;
+    src: url(./font/CircularStd-Light.otf);
+    font-weight: 100;
+}
+@font-face{
+    font-family: spotify;
+    src: url(./font/CircularStd-Medium.otf);
+    font-weight: 200;
+}
+@font-face{
+    font-family: spotify;
+    src: url(./font/CircularStd-Bold.otf);
+    font-weight: 300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: spotify;
+    font-weight: 100;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
